@@ -1,0 +1,27 @@
+.buttonGrid .buttonGroup {
+}
+
+.buttonGrid .buttonGroup .button {
+    min-width: 33.33333333%;
+}
+
+.resultBox {
+    margin-top: 20px;
+    height: calc(100vh - 130px);
+    overflow: auto;
+}
+
+.resultBox .resultWrapper {
+    height: 100%;
+}
+
+.resultBox .resultWrapper ul {
+    margin-top: 0px !important;
+}
+
+@media only screen and (max-width: 768px) {
+    .resultBox .resultWrapper .MuiImageList-root {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 5px !important;
+    }
+}
